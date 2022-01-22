@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>黃婷鈺的作業3</title>
+
+<style>
+    .a2 {
+        display: block;
+        text-decoration:none;
+        color: #000;
+        background-color: rgb(236, 236, 236);
+        width: 100%;
+        
+    }
+    .bb{
+        margin-left: 20px;
+    }
+    .cc{
+        margin-left: 20px;
+    }
+    .star{
+        color: crimson;
+    }
+   
+    
+    .ta{
+            margin-left: 40px;
+            width: 80%;
+            height:100px ;
+        }
+         
+    .ta2{
+            margin-left: 40px;
+            width: 80%;
+            height:100px ;
+        }
+     .a1{
+            background-color: rgb(231, 217, 213);
+            width: 20%;
+        }    
+    </style>
+</head>
+<body>
+    <a class="a2" href="#h" onclick="if(document.getElementById('h') .style.display=='none') 
+    {document.getElementById('h') .style.display=''}else{document.getElementById('h') .style.display='none'}" title="" type="button" >
+    <div class="bb">▶我要加入會員</div></a>
+    
+<div id="h" style="display: none;"  >
+    <div class="cc" >
+        <span>   嗨！歡迎您加入網站會員</span> <span style="color: crimson;">表格內*圖案標示代表必填欄位，請務必填寫，謝謝您</span>
+        <br>
+        <div class="pass">
+            <p>1.設定您的帳號密碼</p>
+            <form >
+                <table class="ta" style="border:3px #a79b8f solid;" rules="all" cellpadding='5'>
+                    <tr>
+                        <td class="a1" ><span class="star">*</span>會員帳號</td>
+                        <td ><input type="text" name="user"/> ※記為本登入該帳號，請務必留下正確Email</td>
+                    </tr>
+                    <tr>
+                        <td class="a1" ><span class="star">*</span>密碼</td>
+                        <td ><input type="password" name="password"/> ※5-20字元，至少而且要混合大小寫英文字母，不含空白、雙引號、老鼠號、逗號等特殊符號。</td>
+                    </tr>
+                    <tr>
+                        <td class="a1" ><span class="star">*</span>密碼確認</td>
+                        <td ><input type="password" name="rpassword"/> </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+
+        <div class="pass">
+            <p>2.填入個人基本資料</p>
+            <form >
+                <table class="ta" style="border:3px #a79b8f solid;" rules="all" cellpadding='5'>
+                    <tr>
+                        <td class="a1" ><span class="star">*</span>會員姓名</td>
+                        <td ><input type="text" name="username"/> <br>※請輸入您的真實姓名</td>
+                    </tr>
+                    <tr>
+                        <td class="a1" ><span class="star">*</span>性別</td>
+                        <td>
+                            <input type="radio" name="sex" value="男"/>男
+                            <input type="radio" name="sex" value="女"/>女
+                          </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="a1" ><span class="star">*</span>出生年月日</td>
+                        <td ><select name="YYYY" onchange="YYYYDD(this.value)">
+                            <option > 2003年</option>
+                          </select>
+                          <select name="MM" onchange="MMDD(this.value)">
+                            <option >01月</option>
+                          </select>
+                          <select name="DD">
+                            <option >08號</option>
+                          </select>
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2" class="a1" ><span class="star">*</span>聯絡電話</td>
+                        <td >行動電話<input type="text" name="call"/></td>
+                    </tr>
+
+                    <tr>
+                        <td >電話(<input type="text" name="call2" size="1"/> )<input type="text" name="call3"size="5"/>分類<input type="text" name="call4"size="2"/>  <br>※行動電話和電話請至少寫一樣。</td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="2" class="a1" >訂閱電子報</td>
+                        <td ><input type="checkbox" value="1" name="ok"> 訂閱電子報<br></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+      
+            <div class="pass">
+                <p>3.入會活動專區</p>
+                <form >
+                    <table class="ta2" style="border:3px #a79b8f solid;" rules="all" cellpadding='5'>
+                        <tr>
+                            <td class="a1"  >推薦人帳號</td>
+                            <td ><input type="text" name="fduser"/> </td>
+                        </tr>
+                        <tr>
+                            <td class="a1" >驗證碼</td>
+                            <td > <input type="text" name="yzm" />
+                            <img src="123.png" width="100" height="25"/>
+                            <a href="#">更新驗證碼</a>
+                        </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+           <br>
+            <div>
+                <table align="center" >
+                    <tr >
+                        <td colspan="3" align="center">
+                           <input style="background-color: dimgray; color:  ghostwhite;"type="submit" value="←確定送出" />
+                        </td>        
+                      </tr>
+                </table>
+            </div>
+    </div>
+</div>
+<div style="color: hotpink;"><h2> &nbsp; &nbsp;  ↑點他!!!</h2></div>
+    
+</body>
+</html>
